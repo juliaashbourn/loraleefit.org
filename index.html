@@ -1,128 +1,230 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Fitness by Lora Lee LLC | High-Performance Athletic Conditioning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #ffffff; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+        .font-mono-kinetic { font-family: 'Space Mono', monospace; }
+        
+        /* Acid Volt & Obsidian Palette */
+        .text-acid-volt { color: #ccff00; }
+        .bg-acid-volt { background-color: #ccff00; }
+        .border-acid-volt { border-color: #ccff00; }
+        
+        /* Kinetic Gridlines & Depth markers */
+        .kinetic-bg {
+            background-image: linear-gradient(to right, rgba(204, 255, 0, 0.01) 1px, transparent 1px);
+            background-size: 80px 100%;
+        }
+        
+        /* Infinite Ultra-Long Scroll Reveal */
+        .reveal { transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: translateY(80px); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Custom Hyper-Fluid Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #ccff00; }
+
+        .btn-volt-trigger {
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-volt-trigger:hover {
+            background-color: #ccff00;
+            color: #050505;
+            box-shadow: 0 0 35px rgba(204, 255, 0, 0.5);
+            transform: scale(1.02);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased kinetic-bg">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <!-- Axis Alignment Blueprint Overlay Lines -->
+    <div class="fixed top-0 left-8 md:left-24 w-[1px] h-full bg-zinc-900/40 pointer-events-none z-0"></div>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Minimal High-Contrast Navigation -->
+    <nav class="fixed w-full z-50 py-6 px-6 md:px-24 bg-[#050505]/90 backdrop-blur-md border-b border-zinc-900/60">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-black text-xl md:text-3xl tracking-tighter uppercase italic">
+                TOTAL FITNESS <span class="text-acid-volt font-light not-italic font-mono-kinetic text-xs tracking-normal ml-2">// LORA LEE</span>
+            </div>
+            <div class="hidden lg:flex items-center space-x-12 font-mono-kinetic text-xs tracking-widest uppercase">
+                <a href="#kinetic-vectors" class="text-zinc-400 hover:text-acid-volt transition">// 01. SYSTEMS</a>
+                <a href="#corporate-profile" class="text-zinc-400 hover:text-acid-volt transition">// 02. VERIFICATION</a>
+                <a href="#intake-node" class="text-zinc-400 hover:text-acid-volt transition">// 03. GATEWAY</a>
+            </div>
+        </div>
+    </nav>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <!-- Stage 1: The High-Velocity Energy Opening (Hero) -->
+    <section class="min-h-screen flex items-center justify-center relative px-6 md:px-24 z-10 pt-24">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center w-full">
+            <div class="lg:col-span-7 z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-acid-volt/5 border border-acid-volt/30 mb-8 rounded-none">
+                    <span class="w-2 h-2 bg-acid-volt"></span>
+                    <span class="text-acid-volt font-mono-kinetic text-[10px] tracking-widest uppercase">PULSE CORE: ACTIVE</span>
+                </div>
+                <h1 class="text-6xl md:text-9xl font-black text-white leading-[0.9] uppercase tracking-tighter mb-8 italic">
+                    RECODE <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-acid-volt to-white">YOUR POWER.</span>
+                </h1>
+                <p class="text-zinc-400 text-sm md:text-base max-w-xl leading-relaxed mb-12 font-light">
+                    Total Fitness by Lora Lee LLC engineers rigorous biometric movement, high-velocity human conditioning, and functional strength paradigms for elite physical performance.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#kinetic-vectors" class="border border-acid-volt text-white font-mono-kinetic text-xs tracking-widest uppercase px-10 py-5 btn-volt-trigger text-center">Initialize Training Matrix</a>
+                    <a href="tel:19109919417" class="bg-zinc-950 text-zinc-300 font-mono-kinetic text-xs px-10 py-5 hover:text-white transition duration-300 text-center flex items-center justify-center gap-2 border border-zinc-900">
+                        +1 (910) 991-9417
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Dynamic Athletic Motion Imagery -->
+            <div class="lg:col-span-5 relative h-[50vh] lg:h-[70vh] w-full bg-zinc-950 p-1 border border-zinc-900">
+                <div class="w-full h-full relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover grayscale contrast-125 brightness-90 hover:scale-105 transition duration-700" alt="High Intensity Fitness Conditioning Athlete Training">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent"></div>
+                </div>
+                <div class="absolute top-4 right-4 font-mono-kinetic text-[10px] text-acid-volt bg-black px-2 py-1">FRAME_LOAD_9.417</div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <!-- Stage 2: Corporate Architecture Verification (Deep Scroll 1) -->
+    <section id="corporate-profile" class="py-48 px-6 md:px-24 bg-zinc-950/40 border-y border-zinc-900/60 relative">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-4 reveal">
+                <span class="text-acid-volt font-mono-kinetic tracking-widest text-[11px] uppercase block mb-3">// ARCHIVE IDENTITY</span>
+                <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter italic">
+                    SYSTEM REGISTRY
+                </h2>
+            </div>
+            <div class="lg:col-span-8 reveal text-zinc-400 text-sm md:text-base space-y-6 leading-relaxed font-light">
+                <p>
+                    In absolute compliance with the administrative validation framework specified in **Screenshot 2026-06-06 152920.jpg**, Total Fitness by Lora Lee LLC operates as an authorized physical culture establishment within the specialized amusement and recreation sector.
+                </p>
+                <p>
+                    Directed under the technical supervision of key principal **Lora Lee**, the facility deploys fitness strategies, custom athletic routines, and power mechanics from its primary territorial hub coordinates:
+                </p>
+                <div class="border-l border-acid-volt pl-6 py-2 font-mono-kinetic text-sm text-white tracking-wide max-w-xl">
+                    <p class="text-zinc-600 text-xs uppercase mb-1">// SPATIAL DEPLOYMENT LOCATION:</p>
+                    <p class="text-base font-bold tracking-tight text-acid-volt font-sans">4090 Virginia Way, Lake Oswego, OR, 97035-5515, United States</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+    <!-- Stage 3: Kinetic Conditioning Matrix (Deep Scroll 2) -->
+    <section id="kinetic-vectors" class="py-48 px-6 md:px-24">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 text-left reveal">
+                <span class="text-acid-volt font-mono-kinetic uppercase tracking-[0.3em] text-[10px] block mb-2">// KINETIC DISCIPLINE ARRAYS</span>
+                <h2 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter italic">TRAINING ECOSYSTEM</h2>
+            </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+            <!-- Seamless Geometric Continuous Flow - No Enclosing Contours -->
+            <div class="grid lg:grid-cols-2 gap-24">
+                <!-- Modality 1 -->
+                <div class="reveal group">
+                    <div class="overflow-hidden mb-8 h-96 bg-zinc-950 border border-zinc-900">
+                        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover grayscale group-hover:grayscale-0 contrast-125 transition duration-500" alt="Athletic Conditioning Hypertrophy Power Lifting Resistance Gym">
+                    </div>
+                    <span class="text-acid-volt font-mono-kinetic text-xs block mb-2">// CORE ARRAY_01</span>
+                    <h3 class="text-2xl font-bold text-white uppercase mb-3">Hypertrophy & Kinetic Power</h3>
+                    <p class="text-zinc-500 text-xs leading-relaxed font-light">Custom resistance loads designed to trigger myofibrillar expansion, maximize mechanical output, and establish muscular stability lines.</p>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+                <!-- Modality 2 -->
+                <div class="reveal group lg:translate-y-20">
+                    <div class="overflow-hidden mb-8 h-96 bg-zinc-950 border border-zinc-900">
+                        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a25f1?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover grayscale group-hover:grayscale-0 contrast-125 transition duration-500" alt="Cardiovascular Endurance Training High Intensity Athlete">
+                    </div>
+                    <span class="text-acid-volt font-mono-kinetic text-xs block mb-2">// CORE ARRAY_02</span>
+                    <h3 class="text-2xl font-bold text-white uppercase mb-3">Metabolic Conditioning</h3>
+                    <p class="text-zinc-500 text-xs leading-relaxed font-light">High-velocity cardiovascular circuit systems calibrated to shift lactate thresholds, accelerate lipid oxidation, and elevate baseline stamina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Stage 4: Monolithic High-Contrast Statement (Deep Scroll 3) -->
+    <section class="py-44 relative overflow-hidden bg-[#0a0a0a] border-y border-zinc-900">
+        <div class="max-w-5xl mx-auto text-center px-6 reveal">
+            <span class="text-acid-volt font-mono-kinetic text-xs tracking-[0.4em] uppercase block mb-4">// CORE MOTIVATIONAL DISCIPLINE</span>
+            <h3 class="text-3xl md:text-6xl text-white font-black uppercase tracking-tighter italic leading-none">
+                "STRENGTH IS NOT AN ASSET GIVEN. IT IS A MOLECULAR CONSTRUCT EARNED UNDER REPEATED TENSION."
+            </h3>
+        </div>
+    </section>
+
+    <!-- Stage 5: Systemized Performance Progression (Deep Scroll 4) -->
+    <section class="py-48 px-6 md:px-24 bg-black">
+        <div class="max-w-4xl mx-auto reveal text-center">
+            <span class="text-acid-volt font-mono-kinetic text-xs tracking-widest block mb-4">// PERFORMANCE PROTOCOLS</span>
+            <h2 class="text-3xl md:text-4xl font-black text-white uppercase italic">THE ROAD TO ABSOLUTE OUTPUT</h2>
+            
+            <div class="space-y-12 text-left mt-20 max-w-2xl mx-auto">
+                <div class="border-b border-zinc-900 pb-8">
+                    <h4 class="text-acid-volt font-mono-kinetic text-xs mb-2">01 // METRIC ASSESSMENT</h4>
+                    <p class="text-zinc-400 text-xs font-light leading-relaxed">We extract mechanical velocity data, joint mobility limitations, and cardiovascular baselines to blueprint your target zone.</p>
+                </div>
+                <div class="border-b border-zinc-900 pb-8">
+                    <h4 class="text-white font-mono-kinetic text-xs mb-2">02 // STIMULUS OVERLOAD</h4>
+                    <p class="text-zinc-400 text-xs font-light leading-relaxed">Executing controlled structural stress profiles via targeted athletic movements, pushing neural recruitment boundaries safely.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-mono-kinetic text-xs mb-2">03 // BIOLOGICAL SUPERCOMPENSATION</h4>
+                    <p class="text-zinc-400 text-xs font-light leading-relaxed">Systemizing nutrient optimization frameworks and nervous system downtime parameters to catalyze complete structural adaptation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stage 6: Technical Communication Hub Footer (Deep Scroll 5) -->
+    <footer id="intake-node" class="py-32 px-6 md:px-24 bg-black border-t-2 border-acid-volt relative z-10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-5xl md:text-7xl font-black mb-12 text-white tracking-tighter uppercase italic">INTAKE NODE</h2>
+                <div class="space-y-12">
+                    <div>
+                        <span class="text-zinc-700 font-mono-kinetic text-[10px] tracking-widest block mb-1 uppercase">// ELECTRONIC CORE MAILBOX</span>
+                        <a href="mailto:contact@loraleefit.org" class="text-xl md:text-2xl font-bold text-acid-volt hover:text-white transition tracking-tight font-mono-kinetic break-all">contact@loraleefit.org</a>
+                    </div>
+                    <div>
+                        <span class="text-zinc-700 font-mono-kinetic text-[10px] tracking-widest block mb-1 uppercase">// TELEPHONIC COMMUNICATIONS</span>
+                        <a href="tel:19109919417" class="text-xl md:text-2xl font-bold text-white hover:text-acid-volt transition tracking-tight font-mono-kinetic">+1 (910) 991-9417</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end items-start lg:items-end mt-12 lg:mt-0">
+                <span class="text-zinc-700 font-mono-kinetic text-[10px] tracking-widest block mb-2 uppercase">// COMMAND HEADQUARTERS</span>
+                <p class="text-xl text-zinc-400 tracking-tight uppercase font-light leading-tight">
+                    4090 Virginia Way Lake Oswego<br>
+                    OR, 97035-5515<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-28 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between text-[10px] text-zinc-600 uppercase tracking-widest font-mono-kinetic">
+            <p>&copy; TOTAL FITNESS BY LORA LEE LLC. REGENERATION ACTIVE.</p>
+            <p>PORTLAND METRO COORDINATES // OREGON, USA</p>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script for Smooth Fluid Transitions -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
